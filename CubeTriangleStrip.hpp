@@ -20,6 +20,15 @@ namespace Utilities {
 
 	class Cube {
 	public:
+		/*!
+			Creates a cube as Triangle strip. 
+			@param size
+				Size of the Cube.
+			@param antiClockwise
+				If the vertices are defined in anti-clockwise manner.
+			@return
+				std::vector containing floats (x,y,z,  x,y,z,  x,y,z ...) for easier rendering.
+		*/
 		static inline std::vector<float> CreateTriangleStrip(const float &size, const bool &antiClockwise) {
 			// half-size
 			const float x = size / 2.0f;			
