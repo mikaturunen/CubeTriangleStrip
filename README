@@ -1,15 +1,12 @@
-Simple Algorithm to turn a N sized cube into a Triangle strip for easier rendering.
-I have used GL_TRIANGLE_STRIP (OpenGL) to render it.
+Simple Algorithm to turn a N sized cube into a Triangle strip for easier rendering. I have used GL_TRIANGLE_STRIP (OpenGL) to render it.
 
-Triangle strip --> http://en.wikipedia.org/wiki/Triangle_strip
+Triangle strip: 
+ - http://en.wikipedia.org/wiki/Triangle_strip
 
-There are quite many algorithms going on around the internet but I personally did not find any
-implementation examples, so I thought I'd write one myself for everyone to look at, I followed
-this paper for the implementation: http://www.cs.umd.edu/gvil/papers/av_ts.pdf
+There are quite many algorithms going on around the internet but I personally did not find any implementation examples, so I thought I'd write one myself for everyone to look at, I followed this paper for the implementation: 
+ - http://www.cs.umd.edu/gvil/papers/av_ts.pdf
 
-The vertices can be acquired either in clockwise order or anti-clockwise order. OpenGL by
-default uses anti-clockwise ordering. 
+The vertices can be acquired either in clockwise order or anti-clockwise order. OpenGL by default uses anti-clockwise ordering. 
 
-Note that the header also contains a dummy struct V3 (Vector3) just to make the internals
-of Utilities::Cube::CreateTriangleStrip() more readable.
+Note that the header also contains a dummy struct V3 (Vector3) just to make the internals of Utilities::Cube::CreateTriangleStrip() more readable.
 
